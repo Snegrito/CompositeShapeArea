@@ -1,0 +1,141 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Арифметическое переполнение: использование оператора \"+\" на байтовом значении 4 и приведение результата к байтовому значению 8. Приведите значение к более широкому типу перед вызовом оператора \"+\", чтобы избежать переполнения (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/79163/source/repos/Figures/Figures/main.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 29,
+                  "endLine": 11,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sortShapes",
+                  "decoratedName": "?sortShapes@@YAXAEAVShapeVector@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Арифметическое переполнение: использование оператора \"+\" на байтовом значении 4 и приведение результата к байтовому значению 8. Приведите значение к более широкому типу перед вызовом оператора \"+\", чтобы избежать переполнения (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/79163/source/repos/Figures/Figures/main.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sortShapes",
+                  "decoratedName": "?sortShapes@@YAXAEAVShapeVector@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/79163/source/repos/Figures/Figures/main.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d3957593ce4221ee0f55906575dc6106280aa77fb5800ac35eb3f5010444c964"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/rectangle.h"
+          },
+          "hashes": {
+            "sha-256": "ee94686526407b74aa401092ed3ed79b5322ca351aa6fa38c8e185dfa1ecc90a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/shape.h"
+          },
+          "hashes": {
+            "sha-256": "5fa48ce15836fcbd8d37dfff6251b21754a892ee316f6bb2051a75c24ff7f526"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/base-types.h"
+          },
+          "hashes": {
+            "sha-256": "9587e200b8628619912ecc50cb40342aa3ddbad06e3e92c243fe74ebb83490a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/ring.h"
+          },
+          "hashes": {
+            "sha-256": "0984e9434a7eb944e32020390fe33714405e273e35bb058405789c032b3b1b6b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/compositeshape.h"
+          },
+          "hashes": {
+            "sha-256": "b2576b88cca9da323e21be435aaeae0f475519c317fdab7137509afd1b7c9e3f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/79163/source/repos/figures/figures/shapevector.h"
+          },
+          "hashes": {
+            "sha-256": "4b9730550ebce633779b188d4ed2f901ab10632963a14ec8c5a9aa11668da015"
+          }
+        }
+      ]
+    }
+  ]
+}
